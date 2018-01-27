@@ -10,11 +10,8 @@ export class AppComponent {
   title: string;
   name: string;
   email: string;
-  address = {
-    no: 'Weerasewana',
-    city: 'Lebeema',
-    state: 'Matara'
-  };
+  address: Address;
+
   constructor() {
     this.title = 'app';
     this.name = 'Supuni Nimeshika';
@@ -23,6 +20,12 @@ export class AppComponent {
       no: 'Weerasewana',
       city: 'Lebeema',
       state: 'Matara'
-    };
+    }
   }
+}
+
+interface Address {
+  no: string;
+  city: string;
+  state: string;
 }
