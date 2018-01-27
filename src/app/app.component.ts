@@ -11,6 +11,7 @@ export class AppComponent {
   name: string;
   email: string;
   address: Address;
+  hobbies: string[];
 
   constructor() {
     this.title = 'app';
@@ -20,7 +21,8 @@ export class AppComponent {
       no: 'Weerasewana',
       city: 'Lebeema',
       state: 'Matara'
-    }
+    };
+    this.hobbies = ['Music', 'Movies', 'Sports'];
   }
 }
 
