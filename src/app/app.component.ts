@@ -12,6 +12,7 @@ export class AppComponent {
   email: string;
   address: Address;
   hobbies: string[];
+  showHobbies: boolean;
 
   constructor() {
     this.title = 'app';
@@ -23,6 +24,7 @@ export class AppComponent {
       state: 'Matara'
     };
     this.hobbies = ['Music', 'Movies', 'Sports'];
+    this.showHobbies = false;
   }
 }
 

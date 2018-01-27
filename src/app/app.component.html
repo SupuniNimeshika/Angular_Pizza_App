@@ -7,9 +7,12 @@
 </div>
     <h2>{{name}}</h2>
     <p><strong>Email:</strong> {{email}}</p>
+    <div *ngIf="showHobbies">
+    <h2>Hobbies</h2>
     <ul>
       <li *ngFor="let hobby of hobbies">
         {{hobby}}
       </li>
     </ul>
+    </div>
 
